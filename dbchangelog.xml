@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd
+      http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="2" author="vinish">
+        <ext:createCollection collectionName="ServicePlan"/>
+    </changeSet>
+    <changeSet id="6" author="vinish">
+        <ext:insertOne collectionName="Booking">
+            <ext:document>
+                {
+                id: 111
+                }
+            </ext:document>
+        </ext:insertOne>
+    </changeSet>
+    <changeSet id="7" author="vinish">
+        <ext:insertOne collectionName="Booking">
+            <ext:document>
+                {
+                id: 222
+                }
+            </ext:document>
+        </ext:insertOne>
+    </changeSet>
+    <changeSet id="8" author="vinish">
+        <ext:insertOne collectionName="Booking">
+            <ext:document>
+                {
+                id: 333
+                }
+            </ext:document>
+        </ext:insertOne>
+    </changeSet>
+</databaseChangeLog>
